@@ -36,6 +36,7 @@ h1 span{font-family:cursive;font-weight:100;font-size:30px;display:block;color:#
 .s-box p{font-size:12px;color:#aaa;line-height:1.4}
 .drip-title{font-family:'Anton';font-size:28px;margin:35px 0 5px;letter-spacing:1px;text-align:center}
 .drip-title span{color:#ff2e7e}
+
 .swipe{display:flex;gap:14px;overflow-x:auto;padding:10px 4px 18px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
 .swipe::-webkit-scrollbar{display:none}
 .drip-card{min-width:78%;max-width:78%;background:#1a1a1a;border:1px solid #2a2a2a;border-radius:20px;overflow:hidden;scroll-snap-align:center;flex-shrink:0}
@@ -46,82 +47,9 @@ h1 span{font-family:cursive;font-weight:100;font-size:30px;display:block;color:#
   .card img{height:260px}
   .service-grid{grid-template-columns:1fr 1fr 1fr 1fr}
   .top{padding:55px 20px 55px}
+  /* DESKTOP FIX - no swipe, 3 in a row */
   .swipe{display:grid;grid-template-columns:1fr 1fr 1fr;overflow:visible;scroll-snap-type:none}
   .drip-card{min-width:100%;max-width:100%}
   .drip-card img{height:280px}
 }
 .card{transition:transform 0.3s,box-shadow 0.3s}
-</style>
-</head>
-<body>
-
-<div class="top">
-<div class="logo">TEDDY</div>
-<h1>KICKS & DRIP<span>Sebokeng's Finest</span></h1>
-<p class="tag">100% AUTHENTIC • BEST PRICES IN SEBOKENG</p>
-<div class="badges">
-<span class="badge">🔥 New Drops Weekly</span>
-<span class="badge">🚚 Sebokeng Delivery</span>
-<span class="badge">✅ Quality Checked</span>
-</div>
-<a class="btn" href="https://wa.me/27697350608?text=Hi%20Teddy!%20I%20want%20to%20order">Order on WhatsApp</a>
-</div>
-
-<div class="wrap">
-<div class="grid">
-<!-- TOP 3 KICKS - these were already working -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80" alt="Nike Air Max">
-<div class="info"><span class="tag2" style="background:#ff2e7e">MOST LOVED 🔥</span><h2>Nike Air Max 1 - White / Orange</h2><p>White and Orange sunset colourway. Fresh for summer. Sizes UK 3-9.</p><span class="price">R1 300</span><span class="old">R1 600</span><a class="order" href="https://wa.me/27697350608?text=I%20want%20Nike%20Air%20Max%201">Order This on WhatsApp</a></div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&q=80" alt="Jordan 11">
-<div class="info"><span class="tag2" style="background:#fff;color:#000">LIMITED • JORDAN</span><h2>Jordan 11 - Cool Grey</h2><p>Premium. Icy sole. That top-tier drip.</p><span class="price">R1 800</span><span class="old">R2 200</span><a class="order" href="https://wa.me/27697350608?text=I%20want%20Jordan%2011">Order This on WhatsApp</a></div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600&q=80" alt="Nike SuperRep">
-<div class="info"><span class="tag2" style="background:#00e676;color:#000">IN STOCK 💚</span><h2>Nike SuperRep Go - Lime Green</h2><p>Lime Green beast. Super light. Gym + street. That volt colour pops!</p><span class="price">R1 400</span><a class="order" href="https://wa.me/27697350608?text=I%20want%20Nike%20SuperRep">Order This on WhatsApp</a></div>
-</div>
-</div>
-
-<!-- COMPLETE THE DRIP - FIXED IMAGES HERE -->
-<h2 class="drip-title">COMPLETE THE <span>DRIP</span> 👉 SWIPE</h2>
-<p class="service-sub">Socks, Caps & Tees to match your kicks. Swipe to see more.</p>
-
-<div class="swipe">
-<div class="drip-card">
-<img src="https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=600&q=80" alt="Nike Crew Socks - White">
-<div class="info"><span class="tag2" style="background:#ff2e7e">DRIP • SOCKS</span><h2>Nike Crew Socks - White</h2><p>Classic white crew. Cushioned. Fits with any kick.</p><span class="price">R50.00</span><a class="order" href="https://wa.me/27697350608?text=I%20want%20Nike%20Socks">Order Socks</a></div>
-</div>
-
-<div class="drip-card">
-<img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=600&q=80" alt="Adidas Cap - Green">
-<div class="info"><span class="tag2" style="background:#fff;color:#000">DRIP • CAP</span><h2>Adidas Cap - Green</h2><p>Green trefoil cap. Matches your kicks.</p><span class="price">R200</span><a class="order" href="https://wa.me/27697350608?text=I%20want%20Adidas%20Cap">Order Cap</a></div>
-</div>
-
-<div class="drip-card">
-<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80" alt="Nike Tee - Navy">
-<div class="info"><span class="tag2" style="background:#00e676;color:#000">DRIP • TEE</span><h2>Nike Tee - Navy Small Swoosh</h2><p>Navy baby tee. Clean small swoosh.</p><span class="price">R160</span><a class="order" href="https://wa.me/27697350608?text=I%20want%20Nike%20Tee">Order Shirt</a></div>
-</div>
-</div>
-
-<h2 class="service-title">WHY SHOP WITH <span>TEDDY?</span></h2>
-<p class="service-sub">Top class service, every time.</p>
-<div class="service-grid">
-<div class="s-box"><b>👟</b><h3>100% AUTHENTIC</h3><p>Quality checked. No fakes.</p></div>
-<div class="s-box"><b>🚚</b><h3>SEBOKENG DELIVERY</h3><p>Fast delivery in Sebokeng. Same day before 12pm.</p></div>
-<div class="s-box"><b>📦</b><h3>COURIER NATIONWIDE</h3><p>We courier anywhere in SA via PAXI & Courier Guy.</p></div>
-<div class="s-box"><b>📏</b><h3>SIZES UK 3 - 9</h3><p>All sizes available on WhatsApp.</p></div>
-</div>
-</div>
-
-<div style="background:#ff2e7e;text-align:center;padding:35px 20px;margin-top:40px">
-<h2 style="font-family:'Anton';letter-spacing:1px">TEDDY KICKS & DRIP</h2>
-<p style="margin:10px 0;font-size:14px">069 735 0608</p>
-<p style="font-size:13px">Sebokeng Gauteng, Mon-Sun 08:00-19:00</p>
-</div>
-
-</body>
-  </html>
