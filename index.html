@@ -6,68 +6,100 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600;800&display=swap');
 *{margin:0;box-sizing:border-box}
-body{font-family:'Poppins',Arial;background:#0a0a0a;color:white;text-align:center;padding-bottom:40px}
-.top{background:linear-gradient(180deg,#ff2e7e 0%,#ff8fb3 45%,#0a0a0a 100%);padding:45px 20px 30px}
-.logo{font-family:'Anton';font-size:22px;letter-spacing:3px;background:white;color:#ff2e7e;display:inline-block;padding:6px 14px;border-radius:20px}
-h1{font-family:'Anton';font-size:56px;line-height:0.9;margin:15px 0}
-h1 i{font-family:cursive;font-weight:100;color:#ffd6e7;font-size:36px;display:block}
-.tag{font-weight:600;letter-spacing:1px}
-.badge{display:inline-block;background:#000;color:white;padding:8px 14px;border-radius:20px;font-size:13px;margin:10px 4px;border:1px solid #333}
-.btn{background:#25D366;color:white;padding:16px 28px;border-radius:30px;text-decoration:none;font-weight:800;display:inline-block;margin:15px 5px;font-size:17px;box-shadow:0 8px 20px rgba(37,211,102,0.4)}
-.card{background:#1a1a1a;border:1px solid #2a2a2a;margin:18px 16px;border-radius:24px;overflow:hidden;text-align:left}
-.card img{width:100%;height:340px;object-fit:cover;display:block}
-.info{padding:18px}
-.info h2{font-size:21px}
-.info p{color:#bbb;font-size:14px;margin:6px 0 12px}
-.price{background:#ff2e7e;padding:7px 14px;border-radius:20px;font-weight:800}
+body{font-family:'Poppins',Arial;background:#0f0f0f;color:white}
+.top{background:#ff2e7e;padding:35px 20px 30px;text-align:center}
+.logo{background:white;color:#ff2e7e;padding:6px 16px;border-radius:20px;font-family:'Anton';letter-spacing:3px;display:inline-block}
+h1{font-family:'Anton';font-size:52px;line-height:0.9;margin:12px 0}
+h1 span{font-family:cursive;font-weight:100;font-size:30px;display:block;color:#ffe1ec}
+.tag{font-weight:600;letter-spacing:1px;font-size:14px}
+.badges{margin:14px 0}
+.badge{background:#000;color:#fff;padding:8px 14px;border-radius:20px;font-size:13px;margin:4px;border:1px solid #333;display:inline-block}
+.btn{background:#25D366;color:white;padding:15px 30px;border-radius:30px;text-decoration:none;font-weight:800;display:inline-block;margin-top:12px;box-shadow:0 8px 20px rgba(0,0,0,0.3)}
+.wrap{max-width:1100px;margin:0 auto;padding:20px 16px}
+.grid{display:grid;grid-template-columns:1fr;gap:18px}
+.card{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:20px;overflow:hidden}
+.card img{width:100%;height:300px;object-fit:cover;display:block;background:#fff}
+.info{padding:16px;text-align:left}
+.info h2{font-size:19px}
+.info p{color:#bbb;font-size:13px;margin:6px 0 10px;line-height:1.5}
+.price{background:#ff2e7e;padding:6px 14px;border-radius:20px;font-weight:800}
 .old{color:#777;text-decoration:line-through;font-size:13px;margin-left:8px}
-.card .btn{width:100%;text-align:center;padding:14px 0;margin:14px 0 0}
-.service-title{font-family:'Anton';font-size:28px;letter-spacing:1px;margin:30px 0 5px}
+.order{display:block;background:#25D366;color:white;text-align:center;padding:13px;border-radius:30px;text-decoration:none;font-weight:800;margin-top:14px}
+.tag2{font-size:11px;font-weight:800;padding:4px 8px;border-radius:10px;display:inline-block}
+.service-title{font-family:'Anton';font-size:28px;text-align:center;margin:35px 0 5px;letter-spacing:1px}
 .service-title span{color:#ff8fb3}
-.service-sub{color:#999;font-size:14px;margin-bottom:15px}
-.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 16px}
-.s-box{background:linear-gradient(135deg,#1e1e1e,#22111a);border:1px solid #333;padding:18px 12px;border-radius:18px}
-.s-box b{font-size:26px;display:block}
+.service-sub{text-align:center;color:#999;font-size:14px;margin-bottom:15px}
+.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.s-box{background:#1e1e1e;border:1px solid #333;padding:18px 14px;border-radius:18px;text-align:left}
+.s-box b{font-size:24px}
 .s-box h3{font-size:14px;margin:8px 0 4px}
 .s-box p{font-size:12px;color:#aaa;line-height:1.4}
-.footer{color:#999;font-size:14px;line-height:1.8;margin-top:25px}
+.footer{text-align:center;color:#999;font-size:14px;line-height:1.8;margin:30px 0 10px}
+.center{text-align:center}
+/* DESKTOP VIEW - THIS IS THE FIX */
+@media(min-width:768px){
+  h1{font-size:72px}
+  .grid{grid-template-columns:1fr 1fr 1fr}
+  .card img{height:260px}
+  .service-grid{grid-template-columns:1fr 1fr 1fr 1fr}
+  .top{padding:50px 20px 40px}
+}
 </style>
 </head>
 <body>
 <div class="top">
 <div class="logo">TEDDY</div>
-<h1><i>Teddy</i>KICKS & DRIP</h1>
+<h1><span>Teddy</span>KICKS & DRIP</h1>
 <p class="tag">✨ STEP DIFFERENT • STAY DRIPPY ✨</p>
-<div><span class="badge">✅ 100% Authentic</span><span class="badge">📍 Sebokeng</span></div>
-<p style="margin-top:10px;font-size:14px">📦 Delivery in Sebokeng • We Courier Nationwide</p>
+<div class="badges"><span class="badge">✅ 100% Authentic</span><span class="badge">📍 Sebokeng</span></div>
+<p style="font-size:14px">📦 Delivery in Sebokeng • We Courier Nationwide</p>
 <a class="btn" href="https://wa.me/27697350608?text=Hi%20Teddy%20Kicks!%20I%20want%20to%20order">💬 ORDER ON WHATSAPP</a>
-<p style="font-weight:800;letter-spacing:2px">069 735 0608</p>
+<p style="font-weight:800;letter-spacing:2px;margin-top:10px">069 735 0608</p>
 </div>
+
+<div class="wrap">
+<div class="grid">
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=800&q=80">
-<div class="info"><span style="background:#ff2e7e;padding:4px 8px;border-radius:10px;font-size:11px;font-weight:800">MOST LOVED 🔥 ON-FOOT</span>
+<div class="info"><span class="tag2" style="background:#ff2e7e">MOST LOVED 🔥</span>
 <h2>Nike Air Max 1 - White / Orange</h2>
 <p>White and Orange sunset colourway. Fresh for summer. Sizes UK 3-9.</p>
 <span class="price">R1 300</span><span class="old">R1 600</span>
-<a class="btn" href="https://wa.me/27697350608?text=Hi!%20I%20want%20Air%20Max%201%20White%20Orange%20R1300">Order This on WhatsApp</a>
+<a class="order" href="https://wa.me/27697350608?text=Hi!%20I%20want%20Air%20Max%201%20White%20Orange%20R1300">Order This on WhatsApp</a>
 </div></div>
 
 <div class="card">
 <img src="https://www.sneakerfiles.com/wp-content/uploads/2021/11/2021-cool-grey-air-jordan-11-CT8012-005-on-feet-1.jpeg">
-<div class="info"><span style="background:white;color:black;padding:4px 8px;border-radius:10px;font-size:11px;font-weight:800">LIMITED • JORDAN</span>
+<div class="info"><span class="tag2" style="background:white;color:black">LIMITED • JORDAN</span>
 <h2>Jordan 11 - Cool Grey</h2>
-<p>Premium. Icy sole. That top-tier drip you sent.</p>
+<p>Premium. Icy sole. That top-tier drip.</p>
 <span class="price">R1 800</span><span class="old">R2 200</span>
-<a class="btn" href="https://wa.me/27697350608?text=Hi!%20I%20want%20Jordan%2011%20Cool%20Grey%20R1800">Order This on WhatsApp</a>
+<a class="order" href="https://wa.me/27697350608?text=Hi!%20I%20want%20Jordan%2011%20Cool%20Grey%20R1800">Order This on WhatsApp</a>
 </div></div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&q=80">
-<div class="info"><span style="background:#25D366;padding:4px 8px;border-radius:10px;font-size:11px;font-weight:800">IN STOCK ✅</span>
+<div class="info"><span class="tag2" style="background:#25D366">IN STOCK ✅</span>
 <h2>Nike SuperRep Go - Lime Green</h2>
 <p>Lime Green beast. Super light. Gym + street. That volt colour pops!</p>
 <span class="price">R1 400</span>
-<a class="btn" href="https://wa.me/27697350608?text=Hi!%
+<a class="order" href="https://wa.me/27697350608?text=Hi!%20I%20want%20Nike%20SuperRep%20Go%20Lime%20Green%20R1400">Order This on WhatsApp</a>
+</div></div>
 
+</div>
 
+<h2 class="service-title">WHY SHOP WITH <span>TEDDY?</span></h2>
+<p class="service-sub">Top class service, every time.</p>
+<div class="service-grid">
+<div class="s-box"><b>👟</b><h3>100% AUTHENTIC</h3><p>Quality checked. No fakes.</p></div>
+<div class="s-box"><b>🚚</b><h3>SEBOKENG DELIVERY</h3><p>Fast delivery in Sebokeng. Same day before 12pm.</p></div>
+<div class="s-box"><b>📦</b><h3>COURIER NATIONWIDE</h3><p>We courier anywhere in SA via PAXI & Courier Guy.</p></div>
+<div class="s-box"><b>📏</b><h3>SIZES UK 3 - 9</h3><p>All sizes available on WhatsApp.</p></div>
+</div>
+
+<p class="footer">📍 Sebokeng, Gauteng<br>📱 WhatsApp: 069 735 0608<br>Mon - Sun 08:00 - 19:00</p>
+<div class="center"><a class="btn" href="https://wa.me/27697350608?text=Hi%20Teddy%20Kicks!%20I%20want%20to%20order">💬 ORDER NOW ON WHATSAPP</a></div>
+</div>
+</body>
+</html>
